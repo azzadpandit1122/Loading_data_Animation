@@ -1,3 +1,64 @@
 <resources>
     <string name="app_name">MultiAnimation</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="OwnerName">Owner Name</string>
+    <string name="FatherRawEstablishmentName">Father/Raw/Establishment Name</string>
+    <string name="PlotNoHouseNo">PlotNo/HouseNo</string>
+    <string name="SocietyBuilingName">Society / Builing Name</string>
+    <string name="NumberOfFlates">Number of Flates</string>
+    <string name="ContactNumberMobileLandline">Contact Number (Mobile/Landline)</string>
+    <string name="Emailid">Email ID</string>
+    <string name="UserCharges">User Charges</string>
+    <string name="ChargesCollected">Charges Collected</string>
+    <string name="NameOfSurveyor">Name Of Surveyor</string>
+    <string name="SUBMIT">SUBMIT</string>
+    <string-array name="list">
+        <item>SELECT STATUS</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="location">
+        <item>Indrapuram</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="selectkhand">
+        <item>Select Khand</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="selectPropertyType">
+        <item>SELECT PROPERTY TYPE</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="blank">
+        <item> </item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string name="Dvertex2020">Dvertex &#169;2020</string>
+    <string name="Supportvertex">Support@Dvertex.com</string>
+    <string name="KYCRegistration">KYC Registration</string>
 </resources>

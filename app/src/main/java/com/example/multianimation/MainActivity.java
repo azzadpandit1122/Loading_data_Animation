@@ -1,39 +1,26 @@
 package com.example.multianimation;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.view.View;
+import android.widget.Button;
 
 import io.supercharge.shimmerlayout.ShimmerLayout;
 
 public class MainActivity extends AppCompatActivity {
-
+    //loadinganimation
+    //android:id="@+id/kyc"
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ShimmerLayout shimmer_layout = findViewById(R.id.shimmer_layout);
-        ShimmerLayout shimmer_text = findViewById(R.id.shimmer_text);
-
-//        new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
-//            @Override
-//            public void run() {
-//                shimmer_layout.startShimmerAnimation();
-//                shimmer_text.startShimmerAnimation();
-//            }
-//        }, 5000);}
-
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                shimmer_layout.startShimmerAnimation();
-                shimmer_text.startShimmerAnimation();
-            }
-        }, 2000);
-
+                Fragment kyc_fragment = new KYC_Fragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.mainlayout, kyc_fragment).commit();
 
     }
 }

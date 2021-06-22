@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:paddingTop="?actionBarSize"
+    tools:context=".KYC_Fragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Ownername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/OwnerName"
+                android:textColorHint="@color/purple_700">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/FatherRawElish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/FatherRawEstablishmentName"
+                android:textColorHint="@color/purple_700">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/plotnohouseno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/PlotNoHouseNo"
+                android:textColorHint="@color/purple_700">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/SocietyBuilingName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/SocietyBuilingName"
+                android:textColorHint="@color/purple_700">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/NumberOfFlate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/NumberOfFlates"
+                android:textColorHint="@color/purple_700">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/select_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/list"
+                android:padding="10dp"
+                android:textColorHint="@color/purple_700" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ContactNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ContactNumberMobileLandline"
+                android:textColorHint="@color/purple_700">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Emailid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Emailid"
+                android:textColorHint="@color/purple_700">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/location"
+                android:padding="10dp"
+                android:textColorHint="@color/purple_700" />
+
+            <Spinner
+                android:id="@+id/selectKhand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/selectPropertyType"
+                android:padding="10dp"
+                android:textColorHint="@color/purple_700" />
+
+            <Spinner
+                android:id="@+id/blank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/blank"
+                android:padding="10dp"
+                android:textColorHint="@color/purple_700" />
+
+            <Spinner
+                android:id="@+id/blank1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/blank"
+                android:padding="10dp"
+                android:textColorHint="@color/purple_700" />
+
+            <Spinner
+                android:id="@+id/blank2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/blank"
+                android:padding="10dp"
+                android:textColorHint="@color/purple_700" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/userChargers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/UserCharges"
+                android:textColorHint="@color/purple_700">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/chargesCollected"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ChargesCollected"
+                android:textColorHint="@color/purple_700">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/NameOfSurveyor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/NameOfSurveyor"
+                android:textColorHint="@color/purple_700">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/SUBMIT"
+                android:textSize="20dp"
+                android:textColorHint="@color/white"
+                app:cornerRadius="10dp"
+                android:padding="10dp"
+                />
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/logo"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"/>
+
+                <View
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </View>
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textSize="14dp"
+                        android:textAlignment="viewEnd"
+                        android:text="@string/Dvertex2020"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:textSize="14dp"
+                        android:text="@string/Supportvertex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
