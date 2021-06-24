@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="7dp"
     android:orientation="vertical"
-    android:layout_margin="10dp"
     android:paddingTop="?actionBarSize"
     tools:context=".KYC_Fragment">
 
@@ -21,6 +21,7 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/Ownername"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/OwnerName"
@@ -28,112 +29,130 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:background="@color/white">
+                    android:layout_height="fill_parent">
 
                 </com.google.android.material.textfield.TextInputEditText>
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/FatherRawElish"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+
                 android:hint="@string/FatherRawEstablishmentName"
                 android:textColorHint="@color/purple_700">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:background="@color/white">
+                    android:layout_height="fill_parent">
 
                 </com.google.android.material.textfield.TextInputEditText>
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/plotnohouseno"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/PlotNoHouseNo"
+
                 android:textColorHint="@color/purple_700">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:background="@color/white">
+                    android:layout_height="fill_parent">
 
                 </com.google.android.material.textfield.TextInputEditText>
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/SocietyBuilingName"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+
                 android:hint="@string/SocietyBuilingName"
                 android:textColorHint="@color/purple_700">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:background="@color/white">
+                    android:layout_height="fill_parent">
 
                 </com.google.android.material.textfield.TextInputEditText>
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/NumberOfFlate"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+
                 android:hint="@string/NumberOfFlates"
                 android:textColorHint="@color/purple_700">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:background="@color/white">
+                    android:layout_height="fill_parent">
 
                 </com.google.android.material.textfield.TextInputEditText>
             </com.google.android.material.textfield.TextInputLayout>
 
-            <Spinner
-                android:id="@+id/select_status"
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:entries="@array/list"
-                android:padding="10dp"
-                android:textColorHint="@color/purple_700" />
+                android:layout_marginTop="4dp"
+                app:cardCornerRadius="5dp"
+                app:strokeColor="@color/purple_700"
+                app:strokeWidth="0.1dp">
+
+                <Spinner
+                    android:id="@+id/select_status"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/list"
+                    android:padding="10dp"
+                    android:textColorHint="@color/purple_700" />
+
+            </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/ContactNo"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+
                 android:hint="@string/ContactNumberMobileLandline"
                 android:textColorHint="@color/purple_700">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:background="@color/white">
+                    android:layout_height="fill_parent">
 
                 </com.google.android.material.textfield.TextInputEditText>
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/Emailid"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+
                 android:hint="@string/Emailid"
                 android:textColorHint="@color/purple_700">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:background="@color/white">
+                    android:layout_height="fill_parent">
 
                 </com.google.android.material.textfield.TextInputEditText>
             </com.google.android.material.textfield.TextInputLayout>
 
             <Spinner
                 android:id="@+id/location"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:entries="@array/location"
@@ -142,6 +161,8 @@
 
             <Spinner
                 android:id="@+id/selectKhand"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:entries="@array/selectPropertyType"
@@ -150,6 +171,8 @@
 
             <Spinner
                 android:id="@+id/blank"
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:entries="@array/blank"
@@ -158,6 +181,8 @@
 
             <Spinner
                 android:id="@+id/blank1"
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:entries="@array/blank"
@@ -166,13 +191,18 @@
 
             <Spinner
                 android:id="@+id/blank2"
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:entries="@array/blank"
                 android:padding="10dp"
                 android:textColorHint="@color/purple_700" />
+
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/userChargers"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/UserCharges"
@@ -180,85 +210,91 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:background="@color/white">
+                    android:layout_height="fill_parent">
 
                 </com.google.android.material.textfield.TextInputEditText>
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/chargesCollected"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+
                 android:hint="@string/ChargesCollected"
                 android:textColorHint="@color/purple_700">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:background="@color/white">
+                    android:layout_height="fill_parent">
 
                 </com.google.android.material.textfield.TextInputEditText>
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/NameOfSurveyor"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+
                 android:hint="@string/NameOfSurveyor"
                 android:textColorHint="@color/purple_700">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:background="@color/white">
+                    android:layout_height="fill_parent">
 
                 </com.google.android.material.textfield.TextInputEditText>
             </com.google.android.material.textfield.TextInputLayout>
+
             <com.google.android.material.button.MaterialButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/SUBMIT"
-                android:textSize="20dp"
-                android:textColorHint="@color/white"
-                app:cornerRadius="10dp"
                 android:padding="10dp"
-                />
+                android:textColorHint="@color/white"
+                android:textSize="20dp"
+                app:cornerRadius="10dp" />
+
             <LinearLayout
-                android:layout_marginTop="20dp"
-                android:orientation="horizontal"
+
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
                 <ImageView
-                    android:layout_gravity="center_vertical"
-                    android:src="@drawable/logo"
                     android:layout_width="120dp"
-                    android:layout_height="50dp"/>
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/logo" />
 
                 <View
-                    android:orientation="vertical"
-                    android:layout_weight="1"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
                 </View>
 
                 <LinearLayout
-                    android:gravity="center_vertical"
-                    android:orientation="vertical"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
                     <TextView
-                        android:textSize="14dp"
-                        android:textAlignment="viewEnd"
-                        android:text="@string/Dvertex2020"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:text="@string/Dvertex2020"
+                        android:textAlignment="viewEnd"
+                        android:textSize="14dp" />
+
                     <TextView
-                        android:textSize="14dp"
-                        android:text="@string/Supportvertex"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:text="@string/Supportvertex"
+                        android:textSize="14dp" />
                 </LinearLayout>
 
             </LinearLayout>
